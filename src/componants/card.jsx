@@ -1,4 +1,4 @@
-export function Card(titre,p,img1,nbr1,nbr2,img2,nom) {
+function Card({titre,p,img1,nbr1,nbr2,img2,nom}) {
     return(
         <>
             <div className="card">
@@ -22,3 +22,4 @@ export function Card(titre,p,img1,nbr1,nbr2,img2,nom) {
         </>
     )
 }
+export default Card
