@@ -1,21 +1,82 @@
 @use './_variable' as *
 .card
-    padding: 1%
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3),10px 10px 5px rgba(0, 0, 0, 0.2),20px 20px 5px rgba(0, 0, 0, 0.1)
+    padding: 1rem
     box-sizing: border-box
-    
+    height: min-content
+    width: 25rem
+    background-color: $Very_dark_blue_card
+    border-radius: 10px
     .card_header
+        box-sizing: border-box
         height: 50%
+        .img
+            position: relative
+            border-radius: 10px
+            overflow: hidden
+        img
+            height: 100%
+            width: 100%
+        #color
+            transition: ease 3s
+            position: absolute
+            display: none
+            left: 0
+            right: 0
+            height: 100%
+            width: 100%
+            background-color: rgba($Cyan, 0.2)
+            border-radius: 10px
+            
+            img
+                height: 5rem
+                width: 5rem
+                
+        .img:hover 
+            #color
+                display: inline-flex
+                justify-content: center
+                align-items: center
     .card_body
         h3
             color: $White
+        h3:hover
+            cursor: pointer
+            color: $Cyan
+
         p
             color: $Very_dark_blue_line
-            div
+        div
+            ul
+                display: flex
+                // flex-direction: row
+                justify-content: space-between
+                padding-left: 1.2rem
+                li::marker
+                    font-size: 10px
+
                 li:first-child
+                    list-style-image: url('./assets/icon-ethereum.svg')
                     color: $Cyan
                 li:last-child
+                    list-style-image: url('./assets/icon-clock.svg')
                     color: $Very_dark_blue_line
     .card_footer
+        align-items: center
+        padding: 20px 0
+        display: flex
+        flex-direction: row
+        gap: 1rem
+        justify-content: flex-start
         border-top: 1px $Very_dark_blue_line solid
         span 
             color: $White
+        span:hover
+            cursor: pointer
+            color: $Cyan
+
+        img
+            height: 4rem
+            width: auto
+            border: 1px $White solid
+            border-radius: 50%

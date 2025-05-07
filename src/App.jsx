@@ -1,5 +1,5 @@
 import './App.css'
-import  Card  from './componants/card'
+import  Card from './componants/card'
 
 function App() {
 
@@ -13,6 +13,7 @@ function App() {
         nbr1={0.041} 
         nbr2={3} 
         nom="Jules Wyvern"
+        img3='./src/assets/icon-view.svg'
       />
     </>
   )

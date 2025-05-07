@@ -1,36 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 body {
   margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+body p {
+  font-size: 18px;
 }
 
 #root {
   height: 100vh;
   background-color: hsl(217, 54%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
-  padding: 1%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3), 10px 10px 5px rgba(0, 0, 0, 0.2), 20px 20px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
   box-sizing: border-box;
+  height: min-content;
+  width: 25rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 10px;
 }
 .card .card_header {
+  box-sizing: border-box;
   height: 50%;
+}
+.card .card_header .img {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card .card_header img {
+  height: 100%;
+  width: 100%;
+}
+.card .card_header #color {
+  transition: ease 3s;
+  position: absolute;
+  display: none;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 255, 246.5, 0.2);
+  border-radius: 10px;
+}
+.card .card_header #color img {
+  height: 5rem;
+  width: 5rem;
+}
+.card .card_header .img:hover #color {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .card .card_body h3 {
   color: hsl(0, 0%, 100%);
 }
+.card .card_body h3:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
 .card .card_body p {
   color: hsl(215, 32%, 27%);
 }
-.card .card_body p div li:first-child {
+.card .card_body div ul {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.2rem;
+}
+.card .card_body div ul li::marker {
+  font-size: 10px;
+}
+.card .card_body div ul li:first-child {
+  list-style-image: url("./assets/icon-ethereum.svg");
   color: hsl(178, 100%, 50%);
 }
-.card .card_body p div li:last-child {
+.card .card_body div ul li:last-child {
+  list-style-image: url("./assets/icon-clock.svg");
   color: hsl(215, 32%, 27%);
 }
 .card .card_footer {
+  align-items: center;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: flex-start;
   border-top: 1px hsl(215, 32%, 27%) solid;
 }
 .card .card_footer span {
   color: hsl(0, 0%, 100%);
+}
+.card .card_footer span:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+.card .card_footer img {
+  height: 4rem;
+  width: auto;
+  border: 1px hsl(0, 0%, 100%) solid;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=App.css.map */
