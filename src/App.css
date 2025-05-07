@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+  padding: 1%;
+  box-sizing: border-box;
+}
+.card .card_header {
+  height: 50%;
+}
+.card .card_body h3 {
+  color: hsl(0, 0%, 100%);
+}
+.card .card_body p {
+  color: hsl(215, 32%, 27%);
+}
+.card .card_body p div li:first-child {
+  color: hsl(178, 100%, 50%);
+}
+.card .card_body p div li:last-child {
+  color: hsl(215, 32%, 27%);
+}
+.card .card_footer {
+  border-top: 1px hsl(215, 32%, 27%) solid;
+}
+.card .card_footer span {
+  color: hsl(0, 0%, 100%);
+}
+
+/*# sourceMappingURL=App.css.map */
