@@ -1,7 +1,7 @@
 import './App.css'
-import img1 from './src/assets/image-equilibrium.jpg'
-import img2 from "./src/assets/image-avatar.png"
-import img3 from "./src/assets/icon-view.svg"
+import img1 from './assets/image-equilibrium.jpg'
+import img2 from "./assets/image-avatar.png"
+import img3 from "./assets/icon-view.svg"
 import Card from './componants/card'
 
 function App() {
